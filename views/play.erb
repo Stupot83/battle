@@ -1,19 +1,19 @@
-<div id="player_1" class="<%=@game.active_player == @game.player_1 ? 'active_player' : ''%>">
+<div id='player_1' class='<%=@game.active_player == @game.player_1 ? 'active_player' : ''%>'>
   <h1><%=@game.player_1.name%></h1>
-  <p id="p1_hp"><%=@game.player_1.hp%> HP</p>
+  <p id='p1_hp'><%=@game.player_1.hp%> HP</p>
 </div>
 
-<div class="">	<div id="player_2" class="<%=@game.active_player == @game.player_2 ? 'active_player' : ''%>">
+<div class=''>	<div id='player_2' class='<%=@game.active_player == @game.player_2 ? 'active_player' : ''%>'>
   <h1><%=@game.player_2.name%></h1>
-  <p id="p2_hp"><%=@game.player_2.hp%> HP</p>
+  <p id='p2_hp'><%=@game.player_2.hp%> HP</p>
 </div>	</div>
 
-<div class="">
-  <a href="/attack" id="attack_button">Attack</a>
+<div class=''>
+  <a href='/attack' id='attack_button'>Attack</a>
 </div>
 
-<div id="game_messages" class="">
+<div id='game_messages' class=''>
   <ul>
-    <%= @game.messages.map { |message| "<li>#{message}</li>" }.join %>
+    <%= @game.messages.map { |message| '<li>#{message}</li>' }.join %>
   </ul>
 </div>

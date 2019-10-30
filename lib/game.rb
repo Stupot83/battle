@@ -6,16 +6,10 @@ class Game
     @player_1 = player_1
     @player_2 = player_2
     @turn = @player_1
-    @messages = ["#{player_1.name} and #{player_2.name} entered the battle arena!"]
+    @messages = ['#{player_1.name} and #{player_2.name} entered the battle arena!']
   end
- 
-   def attack
-    inactive_player.receive_damage
-    add_message("#{active_player.name} attacked #{inactive_player.name}")
-    switch_turn
-   end
 
-   def messages
+  def messages
     @messages
   end
 

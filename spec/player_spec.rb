@@ -15,9 +15,9 @@ describe Player do
   end
 
   it "can receive damage" do
-    expect(player).to respond_to(:receive_damage)
+    expect{player.receive_damage}.to change{player.hp}.by -10
   end
-  
+
   it "can display the HP" do
     expect(player).to respond_to(:hp)
   end

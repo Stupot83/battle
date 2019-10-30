@@ -13,4 +13,12 @@ describe Player do
   it "returns the name of the player" do
     expect(player.name).to eq "Negan"
   end
+
+  it "can receive damage" do
+    expect(player).to respond_to(:receive_damage)
+  end
+  
+  it "can display the HP" do
+    expect(player).to respond_to(:hp)
+  end
 end

@@ -6,7 +6,7 @@ require 'spec_helper'
       visit "/"
       fill_in "p1_name", :with => "Negan"
       fill_in "p2_name", :with => "Alpha"
-      click_button("start_button")
+      click_button("submit_names")
       expect(page).to have_text("Player1 Negan and Player2 Alpha have entered the battle arena!")
     end
   end

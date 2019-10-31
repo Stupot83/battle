@@ -6,7 +6,7 @@ class Game
     @player_1 = player_1
     @player_2 = player_2
     @turn = @player_1
-    @messages = ['#{player_1.name} and #{player_2.name} entered the battle arena!']
+    @messages = ["#{player_1.name} and #{player_2.name} entered the battle arena!"]
   end
 
   def messages

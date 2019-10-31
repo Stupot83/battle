@@ -1,15 +1,33 @@
-<form action='/names' method='Post'>
-  <div class=''>
-    <label for='p1_name'>Player1 Name</label>
-    <input type='text' name='p1_name' value=''>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../public/index.css" />
+</head>
+
+<body>
+  <div class="title">
+    <img src="images/Title.png">
   </div>
 
-  <div class=''>
-    <label for='p2_name'>Player2 Name</label>
-    <input type='text' name='p2_name' value=''>
+  <div class="instruction">
+    <h2>Please enter the combatants to begin:</h2>
   </div>
 
-  <div class=''>
-    <input id='submit_names' type='submit' name='submit_names' value='Submit Names'>
-  </div>  	
-</form>
+  <div class="name-form">
+    <form action='/names' method='Post'>
+      <div class=''>
+        <label for='p1_name'>Player1 Name</label>
+        <input type='text' name='p1_name' value=''>
+        <label for='p2_name'>Player2 Name</label>
+        <input type='text' name='p2_name' value=''>
+      </div>
+
+      <div class='start-game'>
+        <input id='submit_names' type='submit' name='submit_names' value='Commence Battle'>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

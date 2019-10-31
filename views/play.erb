@@ -3,7 +3,7 @@
   <p id='p1_hp'><%=@game.player_1.hp%> HP</p>
 </div>
 
-<div class=''>	<div id='player_2' class='<%=@game.active_player == @game.player_2 ? 'active_player' : ''%>'>
+<div id='player_2' class='<%=@game.active_player == @game.player_2 ? 'active_player' : ''%>'>
   <h1><%=@game.player_2.name%></h1>
   <p id='p2_hp'><%=@game.player_2.hp%> HP</p>
 </div>	</div>
@@ -14,6 +14,6 @@
 
 <div id='game_messages' class=''>
   <ul>
-    <%= @game.messages.map { |message| '<li>#{message}</li>' }.join %>
+    <%= @game.messages.map { |message| "<li>#{message}</li>" }.join %>
   </ul>
 </div>
